@@ -52,3 +52,7 @@ def _controller_auto_router(app, controller_name, routed_methods):
             route += '/'+parameters if len(parameters) > 1 else ''
             _set_route(app, controller_name+'#'+method, route, controller, method, methods=list(_verbs))
 
+
+routes['POST']['/surveys/process'] = 'Surveys#process'
+routes['/result'] = 'Surveys#result'
+routes['POST']['/back'] = 'Surveys#index'

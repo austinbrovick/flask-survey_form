@@ -20,8 +20,9 @@ class Welcome(Controller):
 
     """ This is an example of a controller method that will load a view for the client """
     def index(self):
-        """ 
-        A loaded model is accessible through the models attribute 
+        """
+        A loaded model is accessible through the models attribute
         self.models['WelcomeModel'].get_all_users()
         """
+        print '************* Made it to welcome **********'
         return self.load_view('index.html')
